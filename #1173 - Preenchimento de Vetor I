@@ -1,0 +1,10 @@
+vetor = list()
+e = int(input())
+vetor.append(e)
+cont = 0
+
+for c in range(10): #laço para vetor de 10 posições
+    e *= 2 #valor de cada posição é o dobro do antecessor
+    vetor.append(e)
+    print(f'N[{cont}] = {vetor[c]}')
+    cont += 1
