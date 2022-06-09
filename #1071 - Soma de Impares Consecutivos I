@@ -1,0 +1,19 @@
+n1 = int(input())
+n2 = int(input())
+soma = 0
+
+if n1 < n2:
+    for c in range(n1, n2 + 1):
+        if c % 2 == 1 and c != n1 and c != n2:
+            soma += c
+    print(soma)
+
+elif n1 == n2:
+    soma = 0
+    print(soma)
+
+elif n1 > n2:
+    for c in range(n1, n2 - 1, -1):
+        if c % 2 == 1 and c != n1 and c != n2:
+            soma += c
+    print(soma)
