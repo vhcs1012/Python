@@ -1,0 +1,33 @@
+sal = float(input())
+sal_novo = ganho = 0
+perc = ''
+
+if sal >= 0 and sal <= 400:
+
+    sal_novo = sal * 1.15
+    ganho = sal_novo - sal
+    perc = '15 %'
+
+elif sal > 400 and sal <= 800:
+    sal_novo = sal * 1.12
+    ganho = sal_novo - sal
+    perc = '12 %'
+
+elif sal > 800 and sal <= 1200:
+    sal_novo = sal * 1.10
+    ganho = sal_novo - sal
+    perc = '10 %'
+
+elif sal > 1200 and sal <= 2000:
+    sal_novo = sal * 1.07
+    ganho = sal_novo - sal
+    perc = '7 %'
+
+elif sal > 2000:
+    sal_novo = sal * 1.04
+    ganho = sal_novo - sal
+    perc = '4 %'
+
+print('Novo salario: {:.2f}'.format(sal_novo))
+print('Reajuste ganho: {:.2f}'.format(ganho))
+print('Em percentual: {}'.format(perc))
