@@ -1,0 +1,12 @@
+cont = maior = 0
+
+for cont in range(1, 101): # laço para ler 100 numeros
+    num = int(input())
+    cont += 1
+
+    if num > maior: # se o 1° numero for maior que zero, "num recebe maior" 
+        maior = num  # na sequencia, se o proximo numero for maior que o anterior, "maior recebe num"
+        posicao = cont - 1 # flag para marcar posição da leitura do num maior
+
+print(maior)
+print(posicao)
