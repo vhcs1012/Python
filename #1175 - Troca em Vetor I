@@ -1,0 +1,11 @@
+vetor = list()
+
+for qtd in range(20): #laço repetição para preencher vetor
+    num = int(input())
+    vetor.append(num)
+
+contrario = list(reversed(vetor)) #comando para inverter posição do vetor
+cont = 0
+for c in range(len(contrario)):
+    print(f'N[{cont}] = {contrario[c]}')
+    cont += 1
