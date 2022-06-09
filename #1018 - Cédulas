@@ -1,0 +1,44 @@
+novo_valor = int(input())
+cem = cinquenta = vinte = dez = cinco = dois = um = 0
+print(novo_valor)
+
+while True:
+
+    while novo_valor >= 100:
+        novo_valor -= 100
+        cem += 1
+
+    while novo_valor >= 50 and novo_valor < 100:
+        novo_valor -= 50
+        cinquenta += 1
+
+    while novo_valor >= 20 and novo_valor < 50:
+        novo_valor -= 20
+        vinte += 1
+
+    while novo_valor >= 10 and novo_valor < 20:
+        novo_valor -= 10
+        dez += 1
+
+    while novo_valor >= 5 and novo_valor < 10:
+        novo_valor -= 5
+        cinco += 1
+
+    while novo_valor >= 2 and novo_valor < 5:
+        novo_valor -= 2
+        dois += 1
+
+    while novo_valor >= 1 and novo_valor < 2:
+        novo_valor -= 1
+        um += 1
+
+    if novo_valor == 0:
+        break
+
+print(f'{cem} nota(s) de R$ 100,00')
+print(f'{cinquenta} nota(s) de R$ 50,00')
+print(f'{vinte} nota(s) de R$ 20,00')
+print(f'{dez} nota(s) de R$ 10,00')
+print(f'{cinco} nota(s) de R$ 5,00')
+print(f'{dois} nota(s) de R$ 2,00')
+print(f'{um} nota(s) de R$ 1,00')
