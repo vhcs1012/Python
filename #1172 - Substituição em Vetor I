@@ -1,0 +1,12 @@
+vetor = []
+cont = valor = 0
+
+for i in range(1, 11): #laço para ler 10 valores
+    num = int(input())
+    if num <= 0: #condição para alterar valor zero digitado pelo user
+        num = 1
+    vetor.append(num)
+
+for i in range(len(vetor)): #laço para imprimir cada posição do vetor
+    print(f'X[{cont}] = {vetor[i]}')
+    cont += 1
