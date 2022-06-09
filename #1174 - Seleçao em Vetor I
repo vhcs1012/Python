@@ -1,0 +1,9 @@
+vetor = list()
+
+for i in range(100): #laço para ler numero float 100 vezes
+    e = float(input())
+    vetor.append(e)
+
+for c in range(len(vetor)): #laço para imprimir cada posição do vetor
+    if vetor[c] <= 10:
+        print(f'A[{c}] = {vetor[c]:.1f}')
