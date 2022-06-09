@@ -1,0 +1,10 @@
+num = soma = cont = 0
+
+while num >= 0:
+    num = int(input())
+    if num >= 0:
+        soma += num
+        cont = cont + 1
+        
+med = soma / cont
+print('{:.2f}'.format(med))
