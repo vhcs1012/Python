@@ -1,0 +1,7 @@
+n = int(input())
+res = 0
+
+for c in range(1, n+1): #laço para mostrar os valores de 1 até o digitado pelo user
+    if c % 2 == 0: #condicional para verificar se um n° é par
+        res = c * c #caso par, faça o cálculo para obter o quadrado
+        print(f'{c}^2 = {res}')
