@@ -1,0 +1,13 @@
+vetor = list()
+
+t = int(input())
+cont = 0
+for c in range(1000):
+    for i in range(0, t):
+        vetor.append(i)
+
+
+for i in range(len(vetor)):
+    if i == 1000:
+        break
+    print(f'N[{i}] = {vetor[i]}')
