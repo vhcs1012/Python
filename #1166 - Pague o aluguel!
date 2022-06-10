@@ -1,0 +1,26 @@
+div_total = int(input())
+parc = int(input())
+cont = 1
+div_atual = div_total
+
+while True:
+
+    if parc <= div_atual:
+        print(f'pagamento: {cont}')
+        print(f'antes = {div_total}')
+        div_atual = div_total - parc
+        print(f'depois = {div_atual}')
+        print('-----')
+        div_total = div_atual
+        cont += 1
+        
+        if div_total == 0:
+            break
+
+    elif parc > div_total:
+        div_atual = 0
+        print(f'pagamento: {cont}')
+        print(f'antes = {div_total}')
+        print(f'depois = {div_atual}')
+        print('-----')
+        break
