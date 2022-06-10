@@ -1,0 +1,6 @@
+num = int(input())
+numpar = num % 2
+if numpar == 0:
+    print('{} {}'.format((num - 1),(num + 2)))
+elif numpar == 1:
+    print('{} {}'.format((num - 2),(num + 1)))
