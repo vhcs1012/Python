@@ -1,0 +1,6 @@
+num = float(input())
+
+p = 2.54
+conv = num * p
+
+print('{:.3f}'.format(conv))
