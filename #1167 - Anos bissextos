@@ -1,0 +1,11 @@
+inicio = int(input())
+fim = int(input())
+
+cont = soma = 0
+for cont in range(inicio, fim + 1):
+    if cont % 4 == 0 and cont % 100 != 0 or cont % 400 == 0:
+        print(cont)
+        soma += 1
+        cont += 1
+        
+print(f'bissextos: {soma}')
