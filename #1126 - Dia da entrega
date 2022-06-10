@@ -1,0 +1,32 @@
+def verificaDiaEntrada(entrada, lista):
+    if entrada in lista:
+        return True
+
+def verificaQuantDeDias(dias):
+    if dias > 6 or dias < 0:
+        return False
+
+
+listaDeDias = ['domingo', 'segunda', 'terca', 'quarta', 'quinta', 'sexta', 'sabado']
+
+diaDaSemana = False
+
+while (not diaDaSemana):
+    diaEntrada = input()
+    diaDaSemana = verificaDiaEntrada(diaEntrada, listaDeDias)
+
+prazoDeEspera = False
+
+while (not prazoDeEspera):
+    quantDias = int(input())
+    prazoDeEspera = verificaQuantDeDias(quantDias)
+    
+if quantDias == 0:
+    print('chega hoje!')
+else:
+    indexDoDiaSemana = listaDeDias.index(diaEntrada)
+    novaLista = listaDeDias[indexDoDiaSemana + 1:len(listaDeDias)] + listaDeDias[0:indexDoDiaSemana]
+
+    diaEntrega = novaLista[quantDias - 1]
+
+    print('sera entregue', diaEntrega)
