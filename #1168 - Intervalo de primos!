@@ -1,0 +1,18 @@
+inicio = int(input())
+fim = int(input())
+qtd = 0
+
+for num in range(inicio, fim + 1):
+    div = 0
+    cont = 1
+
+    while cont <= num:
+        if num % cont == 0:
+            div += 1
+        cont += 1
+
+    if div == 2:
+        print(f'{num}')
+        qtd += 1
+
+print(f'primos: {qtd}')
