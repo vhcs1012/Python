@@ -1,0 +1,31 @@
+n = int(input())
+
+notas = []
+for i in range(n):
+    notas.append(float(input()))
+
+trabalhos = []
+for i in range(n):
+    trabalhos.append(float(input()))
+
+notas_finais = []
+alt = 0
+
+for i in range(n):
+    if trabalhos[i] == 10 and notas[i] < 10:
+        final = notas[i] + 2
+        if final > 10:
+            final = 10
+        notas_finais.append(final)
+        alt += 1
+    else:
+        notas_finais.append(notas[i])
+
+print(f'NOTAS ALTERADAS: {alt}')
+
+for i in range(n):
+    if notas[i] != notas_finais[i]:
+        print(f'*({i+1:03}) original: {notas[i]:05.2f} | final: {notas_finais[i]:05.2f}')
+    else:
+        print(f'-({i + 1:03}) original: {notas[i]:05.2f} | final: {notas_finais[i]:05.2f}')
+
