@@ -1,0 +1,9 @@
+soma = 0
+while True:
+    doacao = float(input())
+    if doacao == -1:
+        break
+    soma += doacao
+conv = soma * 2.5
+print(f'VC$ {soma:.2f}')
+print(f'R$ {conv:.2f}')
