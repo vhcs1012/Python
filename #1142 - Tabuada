@@ -1,0 +1,6 @@
+n = int(input())
+cont = 1
+for cont in range(1,11):
+    res = n * cont
+    print(f'{n} x {cont} = {res}')
+    cont += 1
