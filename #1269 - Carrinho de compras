@@ -1,0 +1,54 @@
+def exibir():
+    lista.sort()
+    return print(*lista, sep=' ')
+
+def adicionar(a):
+    lista.append(a)
+
+
+def excluir(num):
+    try:
+        lista.remove(num)
+    except:
+        print(f'código {num} não encontrado')
+
+
+lista = []
+num = 0
+
+while num == 0:
+    entrada = input()
+    if entrada == '':
+        pass
+
+    elif entrada == 'encerrar':
+        num = 1
+        exibir()
+        lista1 = []
+
+    else:
+        lista1 = [int(x) for x in entrada.split()]
+        for x in lista1:
+            adicionar(x)
+        lista1 = []
+
+    while num == 0:
+        entrada = input()
+        lista1 = [x for x in entrada.split()]
+
+        if entrada == 'exibir':
+            exibir()
+
+        elif entrada == 'encerrar':
+            num = 1
+            exibir()
+            lista1 = []
+
+        elif lista1[0] == 'adicionar':
+            adicionar(int(lista1[1]))
+            lista1 = []
+
+        elif lista1[0] == 'remover':
+            excluir(int(lista1[1]))
+            lista1 = []
+            
