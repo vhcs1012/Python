@@ -1,0 +1,10 @@
+t = float(input())
+p = float(input())
+
+m = (t + p)/2
+if m >= 6:
+    print('aprovado')
+elif t >= 2:
+    print('talvez com a sub')
+elif t < 2:
+    print('reprovado')
