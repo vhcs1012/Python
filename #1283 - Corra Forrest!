@@ -1,0 +1,19 @@
+cont = soma = 0
+lis_tempo = []
+
+while True:
+
+    temp = int(input())
+    if temp < 0:
+        break
+        
+    lis_tempo.append(temp)
+    cont += 1
+    soma += temp
+    media = soma / cont
+
+print(f'MEDIA: {media:.2f}')
+
+for v in lis_tempo:
+    if v < media:
+        print(v)
